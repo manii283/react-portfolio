@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import HeroSection from './Components/HeroSection'
+import { AppContext } from './context'
 
 const Home = () => {
   const data = {
