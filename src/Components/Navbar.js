@@ -1,9 +1,8 @@
-import React from 'react'
-import {NavLink} from 'react-router-dom';
-import styled from 'styled-components';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 
 const Navbar = () => {
-
   const Nav = styled.nav`
     .navbar-list {
       display: flex;
@@ -113,27 +112,34 @@ const Navbar = () => {
     }
   `;
 
-
   return (
     <Nav>
-      <div className='menyIcon'>
-        <ul className='navbar-list'>
+      <div className="menyIcon">
+        <ul className="navbar-list">
           <li>
-            <NavLink className='navbar-link' to='/'>Home</NavLink>
+            <NavLink className="navbar-link" to="/">
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink className='navbar-link' to='/about'>About</NavLink>
+            <NavLink className="navbar-link" to="/about">
+              About
+            </NavLink>
           </li>
           <li>
-            <NavLink className='navbar-link' to='/service'>Sercices</NavLink>
+            <NavLink className="navbar-link" to="/service">
+              Sercices
+            </NavLink>
           </li>
           <li>
-            <NavLink className='navbar-link' to='/contact'>Contact</NavLink>
+            <NavLink className="navbar-link" to="/contact">
+              Contact
+            </NavLink>
           </li>
         </ul>
       </div>
     </Nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
