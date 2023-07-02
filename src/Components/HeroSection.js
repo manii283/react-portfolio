@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { Button } from "../styles/Button";
 import { useGlobalContext } from "../context";
 
-const HeroSection = ({name, image}) => {
-    const firstNmae = useGlobalContext();
+const HeroSection = ({}) => {
+    const {name, image} = useGlobalContext();
   return (
     <Wrapper>
       <div className="container grid grid-two-column">
@@ -13,7 +13,7 @@ const HeroSection = ({name, image}) => {
           <p className="hero-top-data">THIS IS ME</p>
           <h1 className="hero-heading">{name}</h1>
           <p className="hero-para">
-            I'm {firstNmae}.
+            I'm {name}.
             stack Developer, youtuber and freelancer.
           </p>
           <Button className="btn hireme-btn">
